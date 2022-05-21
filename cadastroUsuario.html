@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE = edge">
+	<meta name = "viewport" content="width = device-width, initial-scale = 1.0">
+	<title> Cadastro </title>
+	<style>
+		
+		body{
+			font-family: Arial, Helvetica, sans-serif;
+			background-image: url(img/info1.jpg);
+			background-repeat: no-repeat;
+		}
+
+		div{
+			background-color: rgba(0, 0, 0, 0.7);
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			padding: 50px;
+			border-radius: 15px;
+			color: white;
+		}
+		
+		a{
+			color: white;
+		}
+
+	</style>
+</head>
+<body>
+
+	<center>
+	<div>
+	<h1> Cadastrar-se </h1>
+	<!--method="POST" pega os dados e envia para o action-->
+	<!--ação é feita no documento indicado-->
+	<form method="POST" action="cadastro.php">
+		
+		Usuário <br>
+		<input type="text" name="txt_usuario"> <br>
+
+		Senha <br>
+		<input type="password" name="txt_senha"> <br>
+
+		Email <br>
+		<input type="email" name="txt_email"> <br>
+		<br>
+
+		<input type="submit" value="Cadastrar"> <br>
+		<br>
+		<!--Link para voltar a tela de login-->
+		<a href="index.html"> Logar </a>
+
+	</form>
+	</div>
+	</center>
+
+</body>
+</html>
